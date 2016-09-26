@@ -10,11 +10,11 @@ Technologies:
 * JQuery for sample web ui
 * WEbJars for autowiring web dependencies
 
-# Usage ****
+# Usage
 `>mvn spring-boot:run`
 maven builds tests and runs the application
 
 `open http://localhost:8080/index.html in browser`
 
 type numeric userId (1, 2 etc) in the text filed and press the button 
-- user's posts should start loading below  
+user's posts should start loading below  
