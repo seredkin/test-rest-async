@@ -11,7 +11,9 @@ Technologies:
 * WEbJars for autowiring web dependencies
 
 # Usage
+
 `>mvn spring-boot:run`
+
 maven builds tests and runs the application
 
 `open http://localhost:8080/index.html in browser`
