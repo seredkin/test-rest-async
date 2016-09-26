@@ -5,9 +5,10 @@ Technologies:
 # CallableFuture and fork-join pool
 # WebSockets - async messaging between web client and server. Spring's STOMP template provides messaging
 # json2pojo - build POJO classes from json schema (see src/main/resources/schema)
-# Lombok - syntax sugar for Java
+# Lombok - syntax sugar for Java (@Data, @Log etc...)
 # JUnit runner for Spring Boot - unit tests
 # JQuery for sample web ui
+# WEbJars for autowiring web dependencies
 
 **** Usage ****
 >mvn spring-boot:run
