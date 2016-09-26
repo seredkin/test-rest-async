@@ -30,9 +30,9 @@ public class RestClientService {
     RestTemplate restTemplate = new RestTemplate(new SimpleClientHttpRequestFactory());
 
     @Async
-    public CompletableFuture<Map> findUser(@NotNull Long user) throws InterruptedException {
+    public CompletableFuture<Map<String, Object>> findUserAndPosts(@NotNull Long user) throws InterruptedException {
 
-        final Map map = new LinkedHashMap<>();
+        final Map<String, Object> map = new LinkedHashMap<>();
 
         return CompletableFuture.supplyAsync(() -> getUserData(user))
                 .thenCombineAsync(

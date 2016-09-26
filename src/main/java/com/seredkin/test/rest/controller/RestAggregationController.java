@@ -23,7 +23,7 @@ public class RestAggregationController {
     @RequestMapping("/users-and-posts/{id}")
     public ResponseEntity<Map> loadRemoteUsersAndPosts(@PathVariable Long id){
         try {
-            return new ResponseEntity<>(restClientService.findUser(id).get(), HttpStatus.OK);
+            return new ResponseEntity<>(restClientService.findUserAndPosts(id).get(), HttpStatus.OK);
         } catch (Exception e) {
             log.error(e);
             Map m = new HashMap();

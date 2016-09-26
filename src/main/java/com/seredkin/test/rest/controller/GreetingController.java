@@ -27,7 +27,7 @@ public class GreetingController {
     @MessageMapping("/hello")
     //@SendTo("/topic/greetings")
     public void greeting(HelloMessage message) throws Exception {
-        Map map = restClientService.findUser(Long.parseLong(message.getName())).get();
+        Map map = restClientService.findUserAndPosts(Long.parseLong(message.getName())).get();
 
         Post startPost = new Post();
         User user = (User)map.get("user");
